@@ -1,0 +1,16 @@
+{
+    "html.validate.styles": false,
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "vscode.html-language-features"
+        
+    },
+    "dart.lineLength": 180,
+    "[dart]": {
+        "editor.rulers": [
+            180
+        ],
+    },
+    "dart.analyzerDiagnosticsPort": 8080,
+    "dart.devToolsPort": 8080
+}

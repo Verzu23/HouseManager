@@ -1,0 +1,63 @@
+svg {
+  zoom: 130%;
+  width: 100%;
+  margin-top: 30px;
+}
+svg rect:hover {
+  fill: #ddd !important;
+  cursor: pointer;
+}
+svg text:hover,
+svg text tspan:hover {
+  pointer-events:none;
+  cursor: pointer;
+}
+
+svg text tspan {
+  pointer-events:none;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.innerDetail {
+  width: 100%;
+  height: 100%;
+}
+.online {
+  border-radius: 20px;
+  box-shadow: 1px 0px 20px 5px rgba(0, 255, 0, 0.30) inset;
+  -webkit-box-shadow: 1px 0px 20px 5px rgba(0, 255, 0, 0.30) inset;
+  -moz-box-shadow: 1px 0px 20px 5px rgba(0, 255, 0, 0.30) inset;
+}
+.offline {
+  border-radius: 20px;
+  box-shadow: 1px 0px 20px 5px rgba(255, 0, 0, 0.30) inset;
+  -webkit-box-shadow: 1px 0px 20px 5px rgba(255, 0, 0, 0.30) inset;
+  -moz-box-shadow: 1px 0px 20px 5px rgba(255, 0, 0, 0.30) inset;
+}
+
+
+
+.containerDetail {
+  display: grid; 
+  grid-template-columns: 50% 50%; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "img table"; 
+}
+.img { grid-area: img; }
+.table { grid-area: table; }
+
+.table label {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 1px;
+}
+
+

@@ -1,0 +1,22 @@
+# GENERAL
+label: en
+general:
+  titoloBanner: Workforce Scheduling
+  logout: Logout
+  accountSettings: Account Settings
+  support: Helpdesk Center
+  adminPanel: Admin Dashboard
+  sensor: Sensor Overview
+  rooms: Rooms
+  values: Values
+  alarmSettings: Allarm Setting
+#*********************************************#
+
+#Login
+login:
+  missUsrPas: Missing Username or Password
+  errUsrPas: Wrong Username or Password
+  generic: Ops...something went wrong
+#*********************************************#
+
+

@@ -1,0 +1,109 @@
+.card {
+    width: 300px;
+    /*padding-bottom: 10px;*/
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+  
+.header {
+    background-color: #484848;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    font-size: 40px;
+  }
+  
+.inputContainer {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px
+  }
+.container{
+    padding-left: 10%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    
+}
+
+.loginButton {
+  width: 50%;
+  color: white;
+  background-color: #004899;
+  border-radius: 10px 10px 10px 10px;
+  font-size: medium;
+}
+
+.background{
+    padding-bottom: 160px;
+    width: 100%;
+    /* background-image: url('imgs/indyCar.png'); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.input{
+  width: 80%;
+  font-size: large;
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #004899;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent  #004899 transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.iconLogin{
+  width: 30px;
+  vertical-align: text-top;
+  padding: 0px 15px 0px 0px;
+}

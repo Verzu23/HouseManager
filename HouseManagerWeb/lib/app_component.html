@@ -1,0 +1,58 @@
+<div class="header">
+
+    <div class="head"></div>
+
+    <material-drawer [visible]="isMenuVisible" (visibleChange)="isMenuVisibleChange($event)" temporary #drawer="drawer"
+        style="z-index: 1000;">
+        <div *deferredContent>
+            <material-list class="bordered-list" width="3">
+
+                <div group>
+                    <material-list-item disabled (trigger)="listSelection('accountSetting',null)">
+                        {{selectedLanguage.general.accountSettings}}
+                        <img class="icon ml-3" src="imgs/menu/setting.png" alt="img">
+                    </material-list-item>
+                    <material-list-item disabled (trigger)="listSelection('support',null)">
+                        {{selectedLanguage.general.support}}
+                        <img class="icon ml-3" src="imgs/menu/support.png" alt="img">
+                    </material-list-item>
+
+                </div>
+                <div group>
+                    <material-list-item (trigger)="listSelection('sensorOverview',null)">
+                        {{selectedLanguage.general.sensor}}
+                        <img class="icon ml-3" src="imgs/menu/condition.png" alt="img">
+                    </material-list-item>
+                    <material-list-item (trigger)="listSelection('rooms',null)">
+                        {{selectedLanguage.general.rooms}}
+                        <img class="icon ml-3" src="imgs/menu/house-plan.png" alt="img">
+                    </material-list-item>
+                    <material-list-item (trigger)="listSelection('alarmSetting',null)">
+                        {{selectedLanguage.general.alarmSettings}}
+                        <img class="icon ml-3" src="imgs/menu/alarm.png" alt="img">
+                    </material-list-item>
+                </div>
+                <div group>
+                    <material-list-item (trigger)="listSelection('logout',null)">
+                        {{selectedLanguage.general.logout}}
+                        <img class="icon ml-3" src="imgs/menu/logout.png" alt="img">
+                    </material-list-item>
+                </div>
+                <!-- <div group>
+                    <material-list-item (trigger)="listSelection('adminPanel',null)">
+                        {{selectedLanguage.general.adminPanel}}
+                        <img class="icon ml-3" src="imgs/menu/admin.png" alt="img">
+                    </material-list-item>
+                </div> -->
+            </material-list>
+        </div>
+    </material-drawer>
+
+    <div id="menuButton" class="button">
+        <button class="btn btn-md btn-secondary ml-3" style="font-size: mediu;" type="button"
+            (click)="drawer.toggle()">Menu<img class="icon ml-1" src="imgs/menu/menu.png" alt="img"></button>
+    </div>
+
+</div>
+
+<router-outlet [routes]="Routes.all"></router-outlet>

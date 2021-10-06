@@ -1,0 +1,4 @@
+global_options:
+  angular|component_source_cleanup:
+    release_options:
+      enabled: false

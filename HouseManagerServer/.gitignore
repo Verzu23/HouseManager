@@ -1,0 +1,7 @@
+__debug_bin.exe
+main.exe
+go.sum
+logs
+main/cert/
+db
+

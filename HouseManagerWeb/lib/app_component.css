@@ -1,0 +1,40 @@
+.header {
+    background: #484848;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 5px 5px;
+  }
+.head{
+    color: white;
+    font-size: xx-large;
+    float: left;
+    position: relative;
+    left: 10px;
+}
+.icon {
+    width: 20px;
+    vertical-align: text-top;
+  }
+
+  material-list-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+  }
+  
+  .bordered-list {
+    padding-top: 50px;
+  }
+  
+  .material-list-item-primary {
+    padding-left: 20px;
+  }
+  
+  material-list-item[disabled] img {
+    opacity: 0.38;
+  }
+  material-list-item img {
+    width: 25px !important;
+  }
